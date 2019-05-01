@@ -1,18 +1,39 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
+import Movies from './views/Movies.vue';
+import Show from './views/Show.vue'
+import Signup from './views/Signup.vue'
+import Login from './views/Login.vue'
 
-Vue.use(Router)
+
+
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home
+      path: '/movies',
+      name: 'movies',
+      component: Movies
     },
+    {
+      path: '/movies/:movie_id',
+      name: 'Show',
+      component: Show
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: Signup
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+
     {
       path: '/about',
       name: 'about',
@@ -22,4 +43,4 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]
-})
+});
