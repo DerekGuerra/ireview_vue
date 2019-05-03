@@ -40,15 +40,16 @@
         axios
         .post("/api/sessions", params)
         .then(response => {
-          axios.default.headers.common["Authorization"] = "Bearer" + response.data.jwt;
+          console.log("in the callback")
+          axios.defaults.headers.common["Authorization"] = "Bearer " + response.data.jwt;
           localStorage.setItem("jwt", response.data.jwt);
           console.log(response.data.jwt);
-          this.$router.push("/");
+          this.$router.push("/movies");
         })
         .catch(error => {
           this.errors = ["Invalid email or password."];
           this.email = "";
-          this.email = "";
+          this.password = "";
         });
       }
     }

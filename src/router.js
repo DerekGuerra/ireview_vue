@@ -4,6 +4,8 @@ import Movies from './views/Movies.vue';
 import Show from './views/Show.vue'
 import Signup from './views/Signup.vue'
 import Login from './views/Login.vue'
+import Search from './views/Search.vue'
+import Logout from './views/Logout.vue'
 
 
 
@@ -19,6 +21,11 @@ export default new Router({
       component: Movies
     },
     {
+      path: '/search_movies/:query',
+      name: 'search_movies',
+      component: Search
+    },
+    {
       path: '/movies/:movie_id',
       name: 'Show',
       component: Show
@@ -32,6 +39,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/logout',
+      name: 'logout',
+      component: Logout
     },
 
     {

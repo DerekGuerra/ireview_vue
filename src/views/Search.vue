@@ -8,7 +8,7 @@
       <p>Release date: {{movie["release_date"]}}</p>
       <p>Ratings: {{movie["rating_count"]}}</p>
       <p>Rating average: {{movie["rating_average"]}}</p>
-     <router-link v-bind:to="'/movies/' + movie.id">See more info</router-link>
+      <p>Summary: {{movie["summary"]}}</p>
       <hr>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
     };
   },
   created: function() {
-    axios.get("/api/movies/").then(response => {
+    axios.get("/api/search_movies/:query").then(response => {
       this.movies = response.data;
     });
   },
