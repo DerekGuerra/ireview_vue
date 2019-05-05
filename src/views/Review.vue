@@ -1,14 +1,13 @@
 <template>
   <div class="root">
     <div v-for="error in errors">
-      {{ error }}
+      {{error}}
     </div>
 
-
-
-    <form v-on:submit.prevent="createReview()">
+    <form v-on:submit.prevent="makeReview()">
       <p>Rating: <input type="text" v-model="newRating"></p>
-      <input type="submit" value="Create review">
+      <p>Comment: <input type="text" v-model="newComment"></p>
+      <input type="submit" value="Make a new review">
     </form>
   </div>
 </template>
@@ -20,25 +19,27 @@
     data: function() {
       return {
         newRating: "",
+        newComment: "",
         errors: []
       };
     },
     created: function() {},
     methods: {
-      createReview: function() {
-        console.log("review");
-
+      makeReview: function() {
         var params = {
-          value: this.newRating
+          rating: this.newRating,
+          comment: this.newComment,
+          movie_id: this.$route.params.movie_id
         }
-        axios.post("api/movies", params).then(response => {
+
+        axios.post("/api/movies", params).then(response => {
           console.log(response);
-          this.$router.push("/movies")
+          this.$router.push("/users")
         }).catch(error => {
           console.log(error.response.data.errors)
           this.errors = error.response.data.errors;
         });
-      }  
+      }
     }
   };
 </script>

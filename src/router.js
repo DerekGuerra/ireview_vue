@@ -6,6 +6,8 @@ import Signup from './views/Signup.vue'
 import Login from './views/Login.vue'
 import Search from './views/Search.vue'
 import Logout from './views/Logout.vue'
+import Users from './views/Users.vue'
+import Review from './views/Review.vue'
 
 
 
@@ -39,6 +41,16 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/users',
+      name: 'users',
+      component: Users
+    },
+    {
+      path: '/review/:movie_id',
+      name: 'review',
+      component: Review
     },
     {
       path: '/logout',
