@@ -33,8 +33,8 @@
 
             <div class="pagination">
               <a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
-              <span class="page-number current">1</span>
-              <a href="#" class="page-number">2</a>
+              <span class="page-number">1</span>
+              <a href="#" class="page-number" v-on:click="changePage('2')">2</a>
               <a href="#" class="page-number">3</a>
               <a href="#" class="page-number">4</a>
               <a href="#" class="page-number">5</a>
@@ -75,10 +75,16 @@ export default {
     };
   },
   created: function() {
-    axios.get("/api/movies/").then(response => {
+    axios.get("/api/movies/?page=1").then(response => {
       this.movies = response.data;
     });
   },
-  methods: {}
+  methods: {
+    changePage: function(pageNumber) {
+       axios.get("/api/movies/?page=" + pageNumber).then(response => {
+      this.movies = response.data;
+      });
+    }
+  }
 };
 </script>

@@ -1377,7 +1377,7 @@ ul.arrow {
   .hidden-print {
     display: none !important; } }
 /*
- * Header Styles
+ * Header Styles 
  */
 .site-header {
   padding: 50px 0;
@@ -1394,7 +1394,9 @@ ul.arrow {
   #branding .logo, #branding .logo-copy {
     display: inline-block; }
   #branding .logo {
-    margin-right: 10px; }
+    margin-right: 10px;
+    height: 200px;
+    margin-bottom: -50px; }
   #branding .site-title {
     margin: 0;
     text-transform: uppercase;

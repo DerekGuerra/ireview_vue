@@ -2,22 +2,20 @@
   <div id="app">
     <header class="site-header">
         <div class="container">
-          <a href="/" id="branding">
+          <a href="/movies" id="branding">
             <img src="https://ireview.in.th/wp-content/uploads/2019/01/newLogo_onLight@2x.png" alt="" class="logo">
             <div class="logo-copy">
-              <h1 class="site-title">iReview</h1>
-              <small class="site-description">Review em' all!</small>
             </div>
           </a> <!-- #branding -->
 
           <div class="main-navigation">
             <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
             <ul class="menu">
-              <li class="menu-item current-menu-item"><a href="movies">Home</a></li>
-              <li class="menu-item"><a href="users">Reviews</a></li>
-              <li class="menu-item"><a href="signup">Join us!</a></li>
-              <li class="menu-item"><a href="login">Log-In</a></li>
-              <li class="menu-item"><a href="logout">Log-out</a></li>
+              <li class="menu-item current-menu-item"><a href="/movies">Home</a></li>
+              <li class="menu-item"><a href="/users">Reviews</a></li>
+              <li class="menu-item"><a href="/signup">Join us!</a></li>
+              <li class="menu-item"><a href="/login">Log-In</a></li>
+              <li class="menu-item"><a href="/logout">Log-out</a></li>
             </ul> <!-- .menu -->
 
             <!-- <form action="#" class="search-form"> -->
