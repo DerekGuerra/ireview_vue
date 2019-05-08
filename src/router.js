@@ -8,6 +8,7 @@ import Search from './views/Search.vue'
 import Logout from './views/Logout.vue'
 import Users from './views/Users.vue'
 import Review from './views/Review.vue'
+import ReviewShow from './views/reviewShow'
 
 
 
@@ -51,6 +52,11 @@ export default new Router({
       path: '/review/:movie_id',
       name: 'review',
       component: Review
+    },
+    {
+      path: '/users/:id',
+      name: 'reviewShow',
+      component: ReviewShow
     },
     {
       path: '/logout',

@@ -5,8 +5,8 @@
     </div>
 
     <form v-on:submit.prevent="makeReview()">
-      <p>Rating: <input type="text" v-model="newRating"></p>
-      <p>Comment: <input type="text" v-model="newComment"></p>
+      Rating: <p><input type="text" v-model="newRating"></p>
+      Comment: <p><input type="comment" v-model="newComment"></p>
       <input type="submit" value="Make a new review">
     </form>
   </div>

@@ -7,27 +7,29 @@
           <li class="text-danger" v-for="error in errors">{{errors}}</li>
         </ul>
         <div class="form-group">
-          <label>First Name:</label>
+          <p><label>First Name:</label></p>
           <input type="text" class ="form-control" v-model="first_name">
         </div>
-        <div class="form-group">
-          <label>Last Name:</label>
+        <p><div class="form-group"></p>
+          <p><label>Last Name:</label></p>
           <input type="text" class ="form-control" v-model="last_name">
         </div>
-        <div class="form-group">
-          <label>Email:</label>
+        <p><div class="form-group"></p>
+          <p><label>Email:</label></p>
           <input type="email" class ="form-control" v-model="email">
         </div>
-        <div class="form-group">
-          <label>Password:</label>
+        <p><div class="form-group"></p>
+          <p><label>Password:</label></p>
           <input type="password" class ="form-control" v-model="password">
         </div>
-        <div class="form-group">
-          <label>Password Confirmation:</label>
+        <p><div class="form-group"></p>
+          <p><label>Password Confirmation:</label></p>
           <input type="password" class ="form-control" v-model="passwordConfirmation">
         </div>
+        <p></p>
         <input type="submit" class="btn btn-primary" value="Submit">
       </form>
+      <hr>
     </div>
   </div>
 </template>
