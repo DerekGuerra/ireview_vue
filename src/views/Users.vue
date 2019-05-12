@@ -29,6 +29,6 @@
 
 <style>
   .user {
-    padding-left: 20%;
+    padding-left: 40%;
   }
 </style>

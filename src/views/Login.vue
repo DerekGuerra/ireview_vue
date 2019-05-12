@@ -55,3 +55,9 @@
     }
   };
 </script>
+
+<style>
+  .login {
+    text-align: center;
+  }
+</style>

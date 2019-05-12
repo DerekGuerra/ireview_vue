@@ -69,3 +69,9 @@
     }
   };
 </script>
+
+<style>
+  .signnup {
+    text-align: center;
+  }
+</style>

@@ -6,8 +6,9 @@
 
     <form v-on:submit.prevent="makeReview()">
       Rating: <p><input type="text" v-model="newRating"></p>
-      Comment: <p><input type="comment" v-model="newComment"></p>
-      <input type="submit" value="Make a new review">
+      <label for="comment">Comment:</label>
+      <p><textarea class="form-control" rows="5" id="comment" type="text" v-model="newComment"></textarea></p>
+      <p><input type="submit" value="Make a new review"></p>
     </form>
   </div>
 </template>
@@ -43,3 +44,9 @@
     }
   };
 </script>
+
+<style>
+  .root {
+    text-align: center;
+  }
+</style>

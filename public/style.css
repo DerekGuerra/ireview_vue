@@ -212,8 +212,9 @@ table {
  */
 body {
   background-color: #131a20;
-  background-image: url(dummy/background.jpg);
-  background-position: top center;
+  background-image: url(https://wallpapertag.com/wallpaper/full/5/8/6/460297-large-cool-space-background-wallpapers-1920x1080.jpg);
+  /*background-position: top center;*/
+  background-size: 100%;
   background-repeat: no-repeat;
   color: #84878d;
   font-family: "Roboto", "Open Sans", sans-serif;
@@ -1598,6 +1599,7 @@ ul.arrow {
     background-position: 100% center; }
 
 .movie-list {
+  background-image: url(https://wallpapertag.com/wallpaper/full/5/8/6/460297-large-cool-space-background-wallpapers-1920x1080.jpg);
   margin: 0 -15px; }
   .movie-list .movie {
     width: 25%;
@@ -1676,7 +1678,9 @@ ul.arrow {
  * Footer Styles
  */
 .site-footer {
-  padding: 50px 0; }
+  padding: 50px 0;
+  background-image: url(https://wallpapertag.com/wallpaper/full/5/8/6/460297-large-cool-space-background-wallpapers-1920x1080.jpg);
+  background-size: 100%; }
   .site-footer .widget {
     margin-bottom: 30px; }
   .site-footer .widget-title {
@@ -1686,9 +1690,9 @@ ul.arrow {
     width: 100%;
     border: 1px solid #bec1c8;
     background-color: transparent;
-    background-image: url(images/arrow.png);
+    background-image: url(https://wallpapertag.com/wallpaper/full/5/8/6/460297-large-cool-space-background-wallpapers-1920x1080.jpg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-size: 100%;
     color: inherit;
     font-size: 13px;
     font-size: 0.8666666667em;

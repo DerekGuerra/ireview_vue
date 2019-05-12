@@ -12,9 +12,9 @@
             <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
             <ul class="menu">
               <li class="menu-item current-menu-item"><a href="/movies">Home</a></li>
-              <li class="menu-item"><a href="/users">Reviews</a></li>
               <li class="menu-item"><a href="/signup">Join us!</a></li>
               <li class="menu-item"><a href="/login">Log-In</a></li>
+              <li class="menu-item"><a href="/users">Reviews</a></li>
               <li class="menu-item"><a href="/logout">Log-out</a></li>
             </ul> <!-- .menu -->
 

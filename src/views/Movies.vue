@@ -6,10 +6,9 @@
           <div class="page">
             <div class="breadcrumbs">
               <a href="movies">Home</a>
-              <span>Movie Review</span>
             </div>
 
-            <div class="filters">
+            <!-- <div class="filters">
               <select name="#" id="#" placeholder="Choose Category">
                 <option value="#">Action</option>
                 <option value="#">Drama</option>
@@ -22,7 +21,7 @@
                 <option value="#">2013</option>
                 <option value="#">2014</option>
               </select>
-            </div>
+            </div> -->
             <div class="movie-list">
               <div class="movie" v-for="movie in movies">
                 <figure class="movie-poster"><img v-bind:src='movie["poster"]' alt="#"></figure>
@@ -33,11 +32,11 @@
 
             <div class="pagination">
               <a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
-              <span class="page-number">1</span>
+              <a href="#" class="page-number" v-on:click="changePage('1')">1</a>
               <a href="#" class="page-number" v-on:click="changePage('2')">2</a>
-              <a href="#" class="page-number">3</a>
-              <a href="#" class="page-number">4</a>
-              <a href="#" class="page-number">5</a>
+              <a href="#" class="page-number" v-on:click="changePage('3')">3</a>
+              <a href="#" class="page-number" v-on:click="changePage('4')">4</a>
+              <a href="#" class="page-number" v-on:click="changePage('5')">5</a>
               <a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
             </div>
           </div>
@@ -88,3 +87,9 @@ export default {
   }
 };
 </script>
+
+<style>
+  .home {
+    text-align: center;
+  }
+</style>

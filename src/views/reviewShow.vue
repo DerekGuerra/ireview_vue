@@ -1,7 +1,7 @@
 <template>
   <div class ="container">
     <h1>Review Detail</h1>
-    <p><b>ID:</b> {{review.id}}</p>
+    <p><b>Review ID:</b> {{review.id}}</p>
     <p><b>Movie ID: </b><router-link v-bind:to="'/movies/' + review.movie_id">{{review.movie_id}}</router-link></p>
     <p><b>Comment:</b> {{review.comment}}</p>
     <p><b>Rating:</b> {{review.rating}}</p>
@@ -34,3 +34,9 @@
     }
   };
 </script>
+
+<style>
+  .container {
+    text-align: center;
+  }
+</style>
