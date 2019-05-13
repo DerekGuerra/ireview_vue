@@ -8,7 +8,7 @@
               <a href="movies">Home</a>
             </div>
 
-            <!-- <div class="filters">
+            <div class="filters">
               <select name="#" id="#" placeholder="Choose Category">
                 <option value="#">Action</option>
                 <option value="#">Drama</option>
@@ -21,7 +21,7 @@
                 <option value="#">2013</option>
                 <option value="#">2014</option>
               </select>
-            </div> -->
+            </div>
             <div class="movie-list">
               <div class="movie" v-for="movie in movies">
                 <figure class="movie-poster"><img v-bind:src='movie["poster"]' alt="#"></figure>

@@ -9,6 +9,8 @@ import Logout from './views/Logout.vue'
 import Users from './views/Users.vue'
 import Review from './views/Review.vue'
 import ReviewShow from './views/reviewShow'
+import movieGenres from './views/movieGenres'
+import genreShow from './views/genreShow.vue'
 
 
 
@@ -32,6 +34,16 @@ export default new Router({
       path: '/movies/:movie_id',
       name: 'Show',
       component: Show
+    },
+    {
+      path: '/genres/movies',
+      name: 'movieGenres',
+      component: movieGenres
+    },
+    {
+      path: '/genres/movies/:id',
+      name:'genreShow',
+      component: genreShow
     },
     {
       path: '/signup',
